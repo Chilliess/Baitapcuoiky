@@ -39,15 +39,15 @@ export default function TabTwoScreen() {
       contentContainerStyle={[styles.contentContainer, contentPlatformStyle]}>
       <ThemedView style={styles.container}>
         <ThemedView style={styles.titleContainer}>
-          <ThemedText type="subtitle">Explore</ThemedText>
+          <ThemedText type="subtitle">Khám phá</ThemedText>
           <ThemedText style={styles.centerText} themeColor="textSecondary">
-            This starter app includes example{'\n'}code to help you get started.
+            Ứng dụng mẫu này có một số ví dụ{'\n'}giúp bạn bắt đầu làm quen.
           </ThemedText>
 
           <ExternalLink href="https://docs.expo.dev" asChild>
             <Pressable style={({ pressed }) => pressed && styles.pressed}>
               <ThemedView type="backgroundElement" style={styles.linkButton}>
-                <ThemedText type="link">Expo documentation</ThemedText>
+                <ThemedText type="link">Tài liệu Expo</ThemedText>
                 <SymbolView
                   tintColor={theme.text}
                   name={{ ios: 'arrow.up.right.square', android: 'link', web: 'link' }}
@@ -59,26 +59,26 @@ export default function TabTwoScreen() {
         </ThemedView>
 
         <ThemedView style={styles.sectionsWrapper}>
-          <Collapsible title="File-based routing">
+          <Collapsible title="Điều hướng theo cấu trúc tệp">
             <ThemedText type="small">
-              This app has two screens: <ThemedText type="code">src/app/index.tsx</ThemedText> and{' '}
+              Ứng dụng có hai màn hình: <ThemedText type="code">src/app/index.tsx</ThemedText> và{' '}
               <ThemedText type="code">src/app/explore.tsx</ThemedText>
             </ThemedText>
             <ThemedText type="small">
-              The layout file in <ThemedText type="code">src/app/_layout.tsx</ThemedText> sets up
-              the tab navigator.
+              Tệp bố cục <ThemedText type="code">src/app/_layout.tsx</ThemedText> thiết lập
+              thanh điều hướng.
             </ThemedText>
             <ExternalLink href="https://docs.expo.dev/router/introduction">
-              <ThemedText type="linkPrimary">Learn more</ThemedText>
+              <ThemedText type="linkPrimary">Tìm hiểu thêm</ThemedText>
             </ExternalLink>
           </Collapsible>
 
-          <Collapsible title="Android, iOS, and web support">
+          <Collapsible title="Hỗ trợ Android, iOS và web">
             <ThemedView type="backgroundElement" style={styles.collapsibleContent}>
               <ThemedText type="small">
-                You can open this project on Android, iOS, and the web. To open the web version,
-                press <ThemedText type="smallBold">w</ThemedText> in the terminal running this
-                project.
+                Bạn có thể chạy dự án này trên Android, iOS hoặc web. Để mở phiên bản web,
+                nhấn <ThemedText type="smallBold">w</ThemedText> trong cửa sổ dòng lệnh đang chạy
+                dự án.
               </ThemedText>
               <Image
                 source={require('@/assets/images/tutorial-web.png')}
@@ -87,35 +87,35 @@ export default function TabTwoScreen() {
             </ThemedView>
           </Collapsible>
 
-          <Collapsible title="Images">
+          <Collapsible title="Hình ảnh">
             <ThemedText type="small">
-              For static images, you can use the <ThemedText type="code">@2x</ThemedText> and{' '}
-              <ThemedText type="code">@3x</ThemedText> suffixes to provide files for different
-              screen densities.
+              Với hình ảnh tĩnh, bạn có thể dùng hậu tố <ThemedText type="code">@2x</ThemedText> và{' '}
+              <ThemedText type="code">@3x</ThemedText> để cung cấp tệp phù hợp với mật độ điểm ảnh
+              của từng màn hình.
             </ThemedText>
             <Image source={require('@/assets/images/react-logo.png')} style={styles.imageReact} />
             <ExternalLink href="https://reactnative.dev/docs/images">
-              <ThemedText type="linkPrimary">Learn more</ThemedText>
+              <ThemedText type="linkPrimary">Tìm hiểu thêm</ThemedText>
             </ExternalLink>
           </Collapsible>
 
-          <Collapsible title="Light and dark mode components">
+          <Collapsible title="Thành phần giao diện sáng và tối">
             <ThemedText type="small">
-              This template has light and dark mode support. The{' '}
-              <ThemedText type="code">useColorScheme()</ThemedText> hook lets you inspect what the
-              user&apos;s current color scheme is, and so you can adjust UI colors accordingly.
+              Mẫu này hỗ trợ giao diện sáng và tối. Hook{' '}
+              <ThemedText type="code">useColorScheme()</ThemedText> giúp xác định giao diện hiện tại
+              của người dùng để điều chỉnh màu sắc phù hợp.
             </ThemedText>
             <ExternalLink href="https://docs.expo.dev/develop/user-interface/color-themes/">
-              <ThemedText type="linkPrimary">Learn more</ThemedText>
+              <ThemedText type="linkPrimary">Tìm hiểu thêm</ThemedText>
             </ExternalLink>
           </Collapsible>
 
-          <Collapsible title="Animations">
+          <Collapsible title="Hiệu ứng chuyển động">
             <ThemedText type="small">
-              This template includes an example of an animated component. The{' '}
-              <ThemedText type="code">src/components/ui/collapsible.tsx</ThemedText> component uses
-              the powerful <ThemedText type="code">react-native-reanimated</ThemedText> library to
-              animate opening this hint.
+              Mẫu này có ví dụ về một thành phần chuyển động. Thành phần{' '}
+              <ThemedText type="code">src/components/ui/collapsible.tsx</ThemedText> sử dụng thư viện{' '}
+              <ThemedText type="code">react-native-reanimated</ThemedText> để tạo hiệu ứng mở rộng
+              phần hướng dẫn này.
             </ThemedText>
           </Collapsible>
         </ThemedView>
